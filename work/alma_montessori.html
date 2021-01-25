@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="/semantic/main.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet">
     </head>
     <style>
         #menu{
@@ -25,27 +25,37 @@
         #content{
             display: flex;
             flex-direction: row;
-            text-align: center;
+        }
+        #image{
+            margin: 30px;
         }
         #text{
-            color: black;
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            margin: auto 0px auto 150px;
+            margin: 30px 50px;
         }
         #text>h1{
-            font-size: 80px;
-            font-family: 'Dancing Script', cursive;
-            width: 700px;
-            text-align: center;
+            font-family: 'Barlow', sans-serif;
+            color: rgba(97, 96, 96, 0.678);
+            font-size: 40px;
+            text-indent: 35px;
         }
         #text>p{
-            font-size: 20px;
+            text-indent: 25px;
+            font-family: 'Raleway', sans-serif;
+            color: black;
+            font-size: 25px;
+            width: fit-content;
+            padding: auto 60px !important;
+        }
+        #text>p>a{
+            color: black;
+        }
+        #text>p>a:hover{
+            color: #ddb515;
         }
         img{
-            size: 900px;
-            margin: -60px 50px 0px 150px;
+            height: 300px;
+            border-radius: 30px;
+            margin: auto 90px;
         }
         #contact{
             background-color: rgba(97, 96, 96, 0.678);
@@ -72,11 +82,14 @@
             <hr>
         </div>
         <div id="content">
-            <div id="text">
-                <h1>“Creativity is intelligence having fun.”</h1>
-                <p>– Albert Einstein</p>
+            <div id="image">
+                <img src="/images/site_camila.jpeg">
             </div>
-            <img src="/images/logo.png">
+            <div id="text">
+                <h1>Alma Montessori's Website</h1>
+                <p>This project may seem simple in design, but for begginers like me, it was a very good challenge! While building this site learned how to create a dropdown menu, how to correctly deploy a website and right now I'm working to build a blog.</p>
+                <p>If you want to take a look by yourself you can click <a href="https://www.almamontessori.com.br/" target="_blank">here.</a></p>
+            </div>
         </div>
         <div id="contact">
             <a href="mailto:higuima13@gmail.com">
