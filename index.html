@@ -1,24 +1,46 @@
 <html>
     <head>
-        <link rel="stylesheet" href="/semantic.min.css">
-        <link rel="stylesheet" href="/main.css">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="semantic/semantic.min.css">
+        <link rel="stylesheet" href="semantic/main.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap" rel="stylesheet">
     </head>
-    <body class= "pushable">
-        <div class="ui large inverted top fixed hidden menu">
-            <div class="ui container">
-              <a class="active item">Home</a>
-              <a class="item">Work</a>
-              <a class="item">Company</a>
-              <a class="item">Careers</a>
-              <div class="right menu">
-                <div class="item">
-                  <a class="ui button">Log in</a>
-                </div>
-                <div class="item">
-                  <a class="ui primary button">Sign Up</a>
-                </div>
-              </div>
-            </div>
-          </div>
+    <style>
+        #menu{
+            margin: auto 50px;
+        }
+        #menu>a{
+            font-family: 'Barlow', sans-serif;
+            color: #ffd700;
+            font-size: 60px;
+            margin: 50px 15px;
+        }
+        #image{
+            margin: 0px 50px 0px 950px;
+        }
+        img{
+            size: 900px;
+        }
+        #contact{
+            background-color: rgba(97, 96, 96, 0.678);
+            margin: 50px 5px auto 0px;
+            height: 250px;
+            width: 1500px;
+            position: absolute;
+        }
+    </style>
+    <body>
+        <div id="menu">
+            <a>Home</a>
+            <a>Work</a>
+            <a>About me</a>
+        </div>
+        <div id="image">
+            <img src="/images/logo.png">
+        </div>
+        <div id="contact">
+            <p></p>
+        </div>
     </body>
 </html>
