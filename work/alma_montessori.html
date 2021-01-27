@@ -83,7 +83,7 @@
         </div>
         <div id="content">
             <div id="image">
-                <img src="/images/site_camila.jpeg">
+                <img id="img" src="/images/site_camila/site_camila.jpeg">
             </div>
             <div id="text">
                 <h1>Alma Montessori's Website</h1>
@@ -101,4 +101,24 @@
             <a href="https://wa.me/message/M2IUKADSN55EN1" target="_blank"><i class="whatsapp icon"></i></a>
         </div>
     </body>
+    <script>
+        let images = ["/images/site_camila/site_camila1.jpeg", "/images/site_camila/site_camila2.jpeg", "/images/site_camila/site_camila3.jpeg", "/images/site_camila/site_camila.jpeg"];
+        console.log(images);
+        let image = 0;
+
+        function changeIMG(){
+          document.getElementById('img').src= images[image];
+            image++;
+            if (image == images.length){
+              image = 0;
+            }       
+          console.log(images[image])
+        };
+
+        function time(){
+          setInterval(changeIMG, 4000);
+        };        
+        
+        time();
+      </script>
 </html>
